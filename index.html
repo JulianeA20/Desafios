@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desafios - Target</title>
+</head>
+<body>
+  <h1>Desafio 1 - Sequência de Fibonacci</h1>
+  <input type="number" id="numero" placeholder="Digite um número">
+  <button onclick="verificarFibonacci()">Verificar</button>
+  <p id="resultado"></p>
+  <p id="sequencia"></p>
+
+  <h1>Desafio 2 - Verificando letra A</h1>
+  <p>Escreva qualquer texto ou palavra: </p>
+  <textarea name="texto" id="texto"></textarea>
+  <button onclick="verificarLetraA()">Verificar</button>
+  <p id="resultadoTexto"></p>
+  <p id="quantidade"></p>
+
+  <h1>Desafio 3 - Valor da Variável SOMA</h1>
+  <p>let INDICE = 12;</p>
+  <p>let SOMA = 0;</p>
+  <p>let K = 1;</p>
+  <br>
+  <p>while (K < INDICE) {</p>
+  <p>K = K + 1;</p>
+  <p>SOMA = SOMA + K;</p>
+  <p>}</p>
+
+  <button onclick="verResultado()">Ver resultado</button>
+  <p id="resultadoSoma"></p>
+
+  <h1>Desafio 4 - Próximos elementos das Sequências</h1>
+    <ul>
+        <li>a) 1, 3, 5, 7, <span id="seq-a" style="font-weight: 800;"></span> ⭢ Sequência de números ímpares consecutivos</li>
+        <li>b) 2, 4, 8, 16, 32, 64, <span id="seq-b" style="font-weight: 800;"></span> ⭢ Cada número é o dobro do anterior</li>
+        <li>c) 0, 1, 4, 9, 16, 25, 36, <span id="seq-c" style="font-weight: 800;"></span> ⭢ Sequência dos quadrados dos números inteiros</li>
+        <li>d) 4, 16, 36, 64, <span id="seq-d" style="font-weight: 800;"></span> ⭢ Sequência dos quadrados dos números pares</li>
+        <li>e) 1, 1, 2, 3, 5, 8, <span id="seq-e" style="font-weight: 800;"></span> ⭢ Sequência de Fibonacci</li>
+        <li>f) 2, 10, 12, 16, 17, 18, 19, <span id="seq-f" style="font-weight: 800;"></span> ⭢ Alterna entre adicionar 8 e adicionar 1</li>
+    </ul>
+
+  <h1>Desafio 5: </h1><p style="font-weight: 800; font-size: 18px">Você está em uma sala com três interruptores, cada um conectado a uma lâmpada em salas diferentes. Você não pode ver as lâmpadas da sala em que está, mas pode ligar e desligar os interruptores quantas vezes quiser. Seu objetivo é descobrir qual interruptor controla qual lâmpada. Como você faria para descobrir, usando apenas duas idas até uma das salas das lâmpadas, qual interruptor controla cada lâmpada?</p>
+
+  <p>1 - Vou chamar os interruptores de A, B e C.</p>
+  <p>2 - Ligo o interruptor A e deixo ligado por alguns minutos para que a lâmpada aqueça. Após esse tempo, desligo o interruptor A e ligo o interruptor B.</p>
+  <p>3 - Vou até a sala das lâmpadas. </p>
+  <p>4 - A lâmpada que estiver acesa corresponde ao interruptor B, foi o último que liguei. Toco nas outras duas lâmpadas: A lâmpada que estiver quente, corresponde ao interruptor A, pois esteve ligada por um tempo e foi desligada antes de eu ir à sala. A lâmpada que estiver fria corresponde ao interruptor C, pois nunca foi ligada.</p>
+  
+  <script src="desafios.js"></script>
+</body>
+</html>
